@@ -1,0 +1,27 @@
+{% load static %}
+<div class="about-wrap cd-section" id="aboutpage">
+    <div class="about-content-wrap">
+        <h1>{{ about.title }}</h1>
+        <h4>{{ about.subheading }}</h4>
+        <p>{{ about.description }}</p>
+
+        <!-- Next Page Button -->
+        <div class="next-page-wrap">
+            <div class="button-wrap">
+                <a href="#">
+                    <i class="fas fa-chevron-circle-down" id="down-arrow"></i>
+                    <span class="next-page-text">{{ about.next_page_button }}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="image-content-wrap">
+        <div class="images">
+            <img src="{{ about.image_1.url }}" alt="{{ about.image_1_alt }}" class="image" width="300px" height="300px">
+            <img src="{{ about.image_2.url }}" alt="{{ about.image_2_alt  }}" class="image" width="300px" height="300px">
+            <img src="{{ about.image_3.url }}" alt="{{ about.image_3_alt }}" class="image" width="300px" height="300px">
+            <img src="{{ about.image_4.url }}" alt="{{ about.image_4_alt }}" class="image" width="300px" height="300px">
+            <img src="{{ about.image_5.url }}" alt="{{ about.image_5_alt }}" class="image" width="300px" height="300px">
+        </div>
+    </div>
+</div>

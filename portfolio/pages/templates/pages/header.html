@@ -1,0 +1,43 @@
+{% load static %}
+
+<header class="site-header">
+    <div class="header-wrap">
+        <!--<div class="logo-wrap">
+            <a href="#"><span>codewith</span>ashish</a>
+            <a href="#"><img src="{% static 'pages/img/logo_white.png' %}" alt="Logo" width="100px" height="50px"></a>
+        </div>-->
+        <!-- Hamburger Icon -->
+        <nav>
+            <div class="nav-button-wrap">
+                <div class="menu-icon hover-target">
+                    <span class="menu-icon__line menu-icon__line-left"></span>
+                    <span class="menu-icon__line"></span>
+                    <span class="menu-icon__line menu-icon__line-right"></span>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Navigation Menu on Hamburger Icon Click -->
+<div class="nav" id="cd-ham-nav">
+    <div class="nav__content">
+        <ul class="nav__list">
+            <li class="nav__list-item"><a href="#landingpage" class="scrollsmooth">Home</a></li>
+            <li class="nav__list-item"><a href="#aboutpage"  class="scrollsmooth">About</a></li>
+            <li class="nav__list-item"><a href="#projects"  class="scrollsmooth">Projects</a></li>
+            <li class="nav__list-item"><a href="#contactpage" class="scrollsmooth">Contact</a></li>
+        </ul>
+    </div>
+</div>
+<!-- Fixed Dotted Navigation -->
+<div class="dotted-nav">
+    <nav id="cd-vertical-nav">
+        <ul>
+            <li><a href="#landingpage" data-number="1" class="scrollsmooth"><span class="cd-dot"></span><span class="cd-label">Home</span></a></li>
+            <li><a href="#aboutpage" data-number="2" class="scrollsmooth"><span class="cd-dot"></span><span class="cd-label">About</span></a></li>
+            <li><a href="#projects" data-number="3" class="scrollsmooth"><span class="cd-dot"></span><span class="cd-label">Projects</span></a></li>
+            <li><a href="#contactpage" data-number="4" class="scrollsmooth"><span class="cd-dot"></span><span class="cd-label">Contact</span></a></li>
+        </ul>
+    </nav>
+</div>

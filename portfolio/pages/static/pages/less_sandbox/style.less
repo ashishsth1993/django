@@ -1,0 +1,59 @@
+@padding_laptop: 5vw;
+@padding_tab: 20px;
+@padding_mobile: 10px;
+
+@color-white: #E8E8E8;
+@color-black: #181818;
+@color-blue: #3FA9F5;
+@background-color__nav_1: @color-black; // top
+@background-color__nav_2: @color-blue; // Bottom
+* {
+    margin: 0;
+    padding: 0;
+    transition: width .3s ease-in-out, height .3s ease-in-out, top .2s ease;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: @color-white;
+  background-color: @color-black;
+  overflow-x: hidden;
+}
+
+h4 {
+  font-size: 125%;
+  font-weight: 300;
+
+}
+@import "less/navigation.less";
+@import "less/landingpage.less";
+@import "less/aboutpage.less";
+@import "less/contactpage.less";
+
+/*
+  Media Queries
+ */
+@import "mediaqueries/landingpage.less";
+@import "mediaqueries/aboutpage.less";
+@import "mediaqueries/contactpage.less";
+
+@media only screen and (max-width: 900px) {
+  body {
+    .site-wrap {
+      .dotted-nav {
+        display: none;
+      }
+    }
+  }
+}
+
+.hide {
+  visibility: hidden;
+}

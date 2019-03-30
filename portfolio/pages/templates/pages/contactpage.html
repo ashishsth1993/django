@@ -1,0 +1,41 @@
+{% load static %}
+
+<div class="contact-wrap cd-section" id="contactpage">
+    <div class="contact-content-wrap">  <!--50%vw -->
+        <div class="main-content"> <!-- 100% -->
+            <h1>{{ contact.title }}</h1>
+            <p>{{ contact.description }}</p>
+        </div>
+        <div class="sub-contact"> <!-- 50% -->
+            <h4>Contact</h4>
+            <p class="contact-number"><span>Call: </span> {{ contact.number }}</p>
+            <p class="contact-email"><span>Email: </span>{{ contact.email }}</p>
+        </div>
+        <div class="sub-address">
+            <h4>Address</h4>
+            <p class="company-address">{{ contact.address }}</p>
+        </div>
+    </div>
+
+    <!-- For for message -->
+    <div class="contact-form-wrap">
+        <h3 class="contact-form-heading">Write message</h3>
+        <div class="form-group-wrap">
+            <div class="form-group name">
+                <input type="text" class="form-control" id="contact-form-name" name="name" placeholder="Name" required aria-required="true" aria-invalid="true">
+                <label id="name-error" class="error" for="contact-form-name">This field is required from JS</label>
+            </div>
+            <div class="form-group email">
+                <input type="email" id="contact-form-email" placeholder="Email" name="email" class="form-control" required aria-required="true" aria-invalid="true">
+                <label for="contact-form-email" id="email-error" class="error">This field is required from JS</label>
+            </div>
+            <div class="form-group message">
+                <textarea name="message" id="contact-form-message"  placeholder="Message ..." required aria-required="true" aria-invalid="false"></textarea>
+                <label for="contact-form-message"> Success </label>
+            </div>
+            <div class="submit-message">
+                <input type="submit" id="submit-message" class="submit-button" name="submit-message" value="Send Now">
+            </div>
+        </div>
+    </div>
+</div>

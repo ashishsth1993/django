@@ -1,0 +1,181 @@
+body {
+    .site-wrap {
+        .contact-wrap {
+            height: 100vh;
+            padding: 0 @padding_laptop;
+            position: relative;
+            overflow: hidden;
+
+            //border-bottom: 2px solid @color-white;
+
+            .contact-content-wrap {
+                border-right: 1px solid rgba(232, 232, 232, 0.2);
+                position: absolute;
+                top: 26vh;
+                width: 45vw;
+                display: inline;
+                .main-content {
+                    width: 90%;
+                    h1 {
+                        font-size: 4vw;
+                        line-height: 6vw;
+                        font-weight: 800;
+                        letter-spacing: 3px;
+                        margin: 0 0 10px 0;
+                    }
+                    p {
+                        letter-spacing: 1px;
+                        font-size: 105%;
+                    }
+                }
+                .sub-contact {
+                    width: 40%;
+                    display: inline;
+                    float: left;
+                    h4 {
+                        letter-spacing: 2px;
+                        margin: 0 0 10px 0;
+                    }
+                    p {
+                        letter-spacing: 1px;
+                        font-size: 95%;
+                    }
+                }
+                .sub-address {
+                    width: 40%;
+                    display: inline;
+                    float: right;
+                    h4 {
+                        letter-spacing: 2px;
+                        margin: 0 0 10px 0;
+                    }
+                    p {
+                        letter-spacing:  1px;
+                        font-size: 95%;
+                    }
+                }
+            }
+            .contact-form-wrap {
+                position: absolute;
+                top: 26vh;
+                width: 46vw;
+                float: right;
+                right: 5vw;
+                left: 60vw;
+                text-align-all: center;
+                h3 {
+                  font-weight: bold;
+                  font-size: 105%;
+                  margin: 0 0 10px 0;
+
+                }
+                .form-group-wrap {
+                    width: 50%;
+                    text-align: right;
+                    .form-group {
+                        width: 100%;
+                        background: none;
+                        display: block;
+                        margin: 0 0 10px 0;
+                        color: @color-white;
+                        position: relative;
+
+                        input {
+                            background: transparent;
+                            border: 1px solid @color-white;
+                            border-radius: 6px;
+                            height: 45px;
+                            color: @color-white;
+                            -webkit-box-sizing: border-box;
+                            -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                            opacity: 0.6;
+                            outline: none;
+                            width: 100%;
+                            padding: 0 0 0 10px;
+                        }
+                        &.name {
+                            input:focus {
+                                outline: none;
+                                opacity: 1;
+                                transition: all .2s ease;
+                            }
+                            label {
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                font-size: 10px;
+                                padding: 2px 5px 0 0;
+                            }
+                        }
+                        &.email {
+                            input:focus {
+                                outline: none;
+                                opacity: 1;
+                                transition: all .2s ease;
+                            }
+                             label {
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                font-size: 10px;
+                                padding: 2px 5px 0 0;
+                            }
+                        }
+                        &.message {
+                            margin: 0;
+                            textarea {
+                                width: 100%;
+                                background: transparent;
+                                padding: 15px 0 0 10px;
+                                color: @color-white;
+                                height: 96px;
+                                border: 1px solid @color-white;
+                                border-radius: 6px;
+                                -webkit-box-sizing: border-box;
+                                -moz-box-sizing: border-box;
+                                box-sizing: border-box;
+                                resize: none;
+                                opacity: 0.6;
+                                outline: none;
+                                &:focus {
+                                    opacity: 1;
+                                    -webkit-transition: all .2s ease-in-out;
+                                    -moz-transition: all .2s ease-in-out;
+                                    -ms-transition: all .2s ease-in-out;
+                                    -o-transition: all .2s ease-in-out;
+                                    transition: all .2s ease-in-out;
+                                }
+                            }
+                            label {
+                                font-size: 14px;
+                                float: left;
+                                padding: 0 0 0 10px;
+                            }
+                        }
+                    }
+                }
+                .submit-message {
+                    margin: 10px 0 0 0;
+                    input {
+                        color: @color-white;
+                        text-decoration: none;
+                        border: 1px solid @color-white;
+                        background: transparent;
+                        opacity: 0.6;
+                        padding: 10px 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 5px 15px 0 rgba(69, 161, 191, .3), 0 5px 15px 0 rgba(0, 0, 0, .2);
+                        transition: all .2s ease;
+                        cursor: pointer;
+                        outline: none;
+                        &:hover {
+                            opacity: 1;
+                            transition: all .2s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

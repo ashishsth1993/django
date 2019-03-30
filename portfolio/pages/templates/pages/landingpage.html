@@ -1,0 +1,42 @@
+{% load static %}
+
+<div class="landingpage-wrap cd-section" id="landingpage">
+    <div class="landingpage-row">
+        <div class="content-wrap">
+            <h1 class="brandName">{{ landing.brand_name }}</h1>
+            <h1 class="brandName2">{{ landing.brand_name_2 }}</h1>
+            <hr/>
+            <h4 class="brandHeading">{{ landing.brand_heading }}
+                <span class="txt-type" data-wait="1000" data-words='["{{ landing.animation_text_1 }}", "{{ landing.animation_text_2 }}", "{{ landing.animation_text_3 }}"]'></span>
+            </h4>
+
+            <p class="brandParagraph">{{ landing.brand_paragraph }}</p>
+
+            <!-- Next Page Navigation -->
+            <div class="next-page-wrap">
+                <div class="button-wrap">
+                    <a href="#aboutpage" class="scrollsmooth">
+                        <i class="fas fa-chevron-circle-down" id="down-arrow"></i>
+                        <span class="next-page-text">{{ landing.next_page_button }}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Landing Page Footer -->
+    <div class="landingpage-footer-wrap">
+        <!-- Contact Button -->
+        <div class="contact-button-wrap">
+            <a href="#contactpage" class="scrollsmooth"><input type="button" name="contact" value="Contact"></a>
+        </div>
+        <!-- Social Media Icons -->
+        <div class="social-media-wrap">
+            <a href="{{ landing.github_link }}" target="_blank" title="{{ landing.brand_name }}'s Github"><i class="fab fa-github"></i></a>
+            <a href="{{ landing.facebook_link }}" target="_blank" title="{{ landing.brand_name }}'s Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="{{ landing.twitter_link }}" target="_blank" title="{{ landing.brand_name }}'s Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="{{ landing.instagram_link }}" target="_blank" title="{{ landing.brand_name }}"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </div>
+</div>
